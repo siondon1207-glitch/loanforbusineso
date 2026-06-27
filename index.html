@@ -1,23 +1,1068 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+
+   <!-- Schema.org Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "여성기업대출 종합 비교 컨설팅 센터",
+      "url": "https://biz.reliabledone.com",
+      "description": "2026년 최신 여성기업대출 조건 및 한도 금리 분석. 정부 정책 자금과 시중 은행 다이렉트 상품 비교, 지역별 신용보증재단 보증서 발급 절차 및 이자 보전 혜택 가이드.",
+      "serviceType": "여성기업대출 및 정부 정책 자금 컨설팅",
+      "provider": {
+        "@type": "Organization",
+        "name": "여성기업 금융 지원 포털",
+        "url": "https://biz.reliabledone.com",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+82-2-1234-5678",
+          "contactType": "customer service"
+        }
+      },
+      "areaServed": "대한민국 전역",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "여성기업대출 지원 상품",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "FinancialProduct",
+              "name": "여성기업 특별 보증 대출",
+              "annualPercentageRate": "2.5-4.5"
+            },
+            "description": "지역신용보증재단 및 신용보증기금의 보증서 발급을 통한 초저금리 여성기업 전용 상품"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "FinancialProduct",
+              "name": "중소벤처기업진흥공단 여성창업자금",
+              "annualPercentageRate": "2.0-3.5"
+            },
+            "description": "창업 7년 이내의 여성 기업인을 위한 시설 자금 및 운전 자금 정부 직접 대출"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "FinancialProduct",
+              "name": "시중은행 다이렉트 여성 우대 신용대출",
+              "annualPercentageRate": "4.0-5.8"
+            },
+            "description": "보증서 없이 신용등급과 매출 실적을 바탕으로 신속하게 한도를 제공하는 금융권 다이렉트 상품"
+          }
+        ]
+      }
+    }
+    </script>
+
+    <style>
+        /* Modern, Soft and Rich Color Palette */
+        body {
+            font-family: "Noto Sans KR", sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.9;
+            background-color: #fcfaff; /* Soft lavender-tinted background */
+            color: #1e293b; /* Dark slate text for better readability */
+            word-break: keep-all;
+        }
+        header {
+            background: linear-gradient(135deg, #5b21b6 0%, #7c3aed 100%); /* Elegant purple gradient */
+            color: white;
+            padding: 3.5rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(91, 33, 182, 0.15);
+        }
+        header h1 {
+            font-size: 2.6rem;
+            font-weight: 800;
+            margin: 0 0 1rem;
+            letter-spacing: -0.05em;
+        }
+        header p {
+            font-size: 1.15rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        nav {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e2e8f0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 0;
+            height: 60px;
+            align-items: center;
+        }
+        nav a {
+            color: #475569;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            color: #7c3aed;
+            background-color: #f5f3ff;
+        }
+        main {
+            max-width: 1120px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+        .content-card {
+            background-color: #ffffff;
+            box-shadow: 0 4px 25px rgba(0,0,0,0.03);
+            border-radius: 16px;
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            border: 1px solid #f1f5f9;
+        }
+        h2 {
+            color: #4c1d95; /* Deep rich violet */
+            font-size: 1.85rem;
+            font-weight: 700;
+            margin-top: 0;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid #f3e8ff;
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.03em;
+        }
+        h3 {
+            color: #6d28d9;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid #7c3aed;
+            padding-left: 0.75rem;
+        }
+        p {
+            text-align: justify;
+            margin-bottom: 1.5rem;
+            color: #334155;
+            font-size: 1.05rem;
+        }
+        /* Tables styling */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 2rem 0;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.01);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+            min-width: 700px;
+        }
+        th, td {
+            padding: 1.2rem;
+            text-align: center;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        th {
+            background-color: #f5f3ff;
+            color: #4c1d95;
+            font-weight: 700;
+        }
+        tr:hover {
+            background-color: #faf9ff;
+        }
+        /* Highlight box */
+        .highlight-box {
+            background-color: #fcfaff;
+            border-left: 5px solid #d946ef; /* Bright magenta/orchid accent */
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        .highlight-box p {
+            margin: 0;
+            color: #581c87;
+            font-weight: 500;
+        }
+        /* Lists */
+        ul.styled-list {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 1.5rem;
+        }
+        ul.styled-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: #475569;
+        }
+        ul.styled-list li::before {
+            content: "•";
+            color: #7c3aed;
+            font-weight: bold;
+            font-size: 1.3rem;
+            position: absolute;
+            left: 0;
+            top: -0.2rem;
+        }
+        /* Forms & Calculators */
+        .form-container {
+            background-color: #fdfbfd;
+            border: 1px solid #f5eef5;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: inset 0 2px 8px rgba(0,0,0,0.01);
+        }
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+        @media (max-width: 768px) {
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group label {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #475569;
+            font-size: 0.95rem;
+        }
+        .form-group input, .form-group select {
+            padding: 0.75rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 1rem;
+            background-color: #ffffff;
+            transition: border-color 0.3s ease;
+        }
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: #7c3aed;
+            box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+        }
+        .btn-submit {
+            background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s, opacity 0.2s;
+            text-align: center;
+            width: 100%;
+        }
+        .btn-submit:hover {
+            opacity: 0.95;
+            transform: translateY(-1px);
+        }
+        .result-panel {
+            background-color: #ffffff;
+            border: 2px dashed #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+            min-height: 80px;
+        }
+        /* FAQ Accordion */
+        dl {
+            margin: 2rem 0 0;
+        }
+        dl dt {
+            font-weight: 700;
+            margin-top: 1rem;
+            cursor: pointer;
+            color: #4c1d95;
+            background-color: #f5f3ff;
+            padding: 1.2rem;
+            border-left: 5px solid #7c3aed;
+            transition: all 0.3s ease;
+            border-radius: 6px;
+            font-size: 1.05rem;
+        }
+        dl dt:hover {
+            background-color: #ede9fe;
+        }
+        dl dt.active {
+            border-left: 5px solid #d946ef;
+            background-color: #fdf4ff;
+        }
+        dl dd {
+            margin: 0.5rem 0 1.5rem 0;
+            padding: 1.2rem;
+            border-left: 2px dashed #cbd5e1;
+            display: none;
+            background-color: #ffffff;
+            font-size: 1rem;
+            color: #334155;
+            text-align: justify;
+        }
+        dl dt.active + dd {
+            display: block;
+        }
+        /* Keyword tags refinement */
+        .keyword-tags {
+            margin: 2.5rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .keyword-tags span {
+            background-color: #f1f5f9;
+            color: #475569;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border: 1px solid #e2e8f0;
+        }
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 3rem;
+            font-size: 0.9rem;
+            color: #64748b;
+            background-color: #f1f5f9;
+            border-top: 1px solid #e2e8f0;
+        }
+        .external-link {
+            display: inline-block;
+            color: #7c3aed;
+            font-weight: 600;
+            text-decoration: underline;
+            transition: color 0.2s;
+        }
+        .external-link:hover {
+            color: #4c1d95;
+        }
+        /* Simulation Visual Block */
+        .simulation-chart {
+            background-color: #1e293b;
+            color: #f8fafc;
+            padding: 2rem;
+            border-radius: 12px;
+            font-family: monospace;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin: 2rem 0;
+            overflow-x: auto;
+        }
+        .simulation-chart span {
+            color: #38bdf8;
+        }
+        .simulation-chart em {
+            color: #fb7185;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+
+  <header>
+    <h1>2026 여성기업대출 조건 및 최저 금리 한도 비교 가이드</h1>
+    <p>중소벤처기업부 공식 여성기업 확인서 발급 혜택 분석 및 시중 은행 다이렉트 추천 자금 조달 종합 컨설팅</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#intro">여성기업대출이란</a></li>
+      <li><a href="#certification">인증 획득 조건</a></li>
+      <li><a href="#compare">기관별 금리 비교</a></li>
+      <li><a href="#regional">전국 30대 지역 혜택</a></li>
+      <li><a href="#calculator">대출이자 계산기</a></li>
+      <li><a href="#community">현실적인 시장 후기</a></li>
+      <li><a href="#faq">자주 묻는 질문</a></li>
+      <li><a href="#contact">맞춤 무료 상담</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    
+    <section id="intro" class="content-card">
+      <h2>여성기업대출 개요 및 2026년 최신 금융 흐름</h2>
+      <p>대한민국에서 사업을 영위하는 대표님들 중 여성 경영인의 비중이 꾸준히 증가하고 있습니다. 이에 발맞추어 정부 및 산하 금융기관에서는 여성 기업인의 경제 활동을 지원하고 기업 경쟁력을 고취하기 위해 전용 정책 금융 상품을 운용하고 있습니다. 일반적으로 일반 기업대출 상품군과 비교했을 때 우대 혜택을 대폭 부여하여 금리를 절감하거나 신용 보증서 발급 한도를 상향해주는 것이 핵심 골자입니다.</p>
+      
+      <p>2026년 현재 고물가와 불안정한 시장 금리 상황 속에서 신규 자금 마련에 대한 걱정이 앞서실 것입니다. 시중의 높은 일반 자영업자 대출 가격과 비교할 때, 여성기업대출 상품은 이자 보전 사업 등을 적용받아 고정적인 비용 부담을 낮출 수 있는 가장 이상적인 수단으로 손꼽힙니다. 본 가이드에서는 공신력 있는 금융감독원 및 중소벤처기업진흥공단의 최신 지침을 기반으로 가치 높은 비교 분석 정보를 전달해 드립니다.</p>
+      
+      <div class="highlight-box">
+        <p>기존의 일반 소상공인 자금 조달과 여성기업대출의 결정적인 차이점은 바로 국가가 보증하는 여성기업 확인서의 보유 여부입니다. 확인서를 획득한 후 진행하는 특별 경영 보증은 일반 기업과 비교해 보증 한도가 대폭 우대되며, 심사 과정에서도 추가적인 가점이 부여되어 신속한 승인 예상 기간을 보장받을 수 있습니다.</p>
+      </div>
+      
+      <p>자금을 준비할 때에는 내가 감당할 수 있는 원리금 환급 예상액을 구체적으로 계산해 두는 준비성이 요구됩니다. 자금 규모가 소액이든 고액이든 관계없이 다이렉트 자금 비교 사이트의 데이터를 꼼꼼히 대조하는 습관이야말로 불필요한 비용의 유출을 완벽하게 예방하는 지름길입니다.</p>
+    </section>
+
+    <section id="certification" class="content-card">
+      <h2>여성기업 인증 절차 및 자격 요건 요약</h2>
+      <p>특별 우대 금융을 정상적으로 이용하기 위해서는 가장 먼저 여성기업 확인서라는 문서를 손에 쥐어야 합니다. 이는 단순한 서류 제출에 그치지 않고, 기업의 지분 소유 형태와 실제 의사 결정권자의 역할을 모두 충족해야 발급됩니다. 가입이나 등록 절차는 한국여성경제인협회를 통해 인터넷 온라인 사이트에서 간편하게 개시할 수 있으나, 사전에 명확한 요건 확인이 필수적입니다.</p>
+
+      <h3>기본적인 신청 자격 요건</h3>
+      <ul class="styled-list">
+        <li>개인사업자의 경우: 대표자가 여성이어야 하며, 동업 상태일 경우 공동 대표 전원이 여성이거나 지분율 상 여성이 최고의사결정 지위를 가지고 있어야 합니다.</li>
+        <li>법인사업자의 경우: 여성이 대표이사로 등기되어 있어야 하며, 주주명부 상 여성이 가장 많은 주식 지분을 보유하여 지배주주 지위를 인정받아야 합니다.</li>
+        <li>실사 인터뷰 대비: 확인서 발급 전에 협회 전문 심사위원이 직접 사업장을 내방하여 대표자가 실제 경영을 성실히 이행하는지 면담을 수행하므로 철저한 업무 숙지가 요구됩니다.</li>
+      </ul>
+
+      <p>가끔 명의 대여를 통해 비정상적으로 자금을 융통하려는 업체 사례가 적발되기도 하나, 이는 엄격한 법률적 조치를 수반하므로 철저히 실질적인 경영이 수반되는 상태에서 전문적인 컨설팅을 받는 방법을 추천합니다. 특히 내돈내산 형태로 자수성가한 신규 사업자일수록 인증서의 힘을 빌려 시중 금융사나 서민 보증 기관을 두드릴 때 받을 수 있는 이자 감면 혜택의 비율이 높아집니다.</p>
+    </section>
+
+    <section id="compare" class="content-card">
+      <h2>여성기업대출 종류 및 공공 기관별 상품 비교</h2>
+      <p>전국의 기업들이 활용 가능한 여성기업 자금 조달의 길은 크게 정부 직접 융자, 공적 보증서 기반 대출, 그리고 1금융권 은행 다이렉트 신용 대출의 세 종류로 구분됩니다. 각 상품은 장단점이 뚜렷하게 갈리기 때문에 본인의 상황에 대입해 현명한 결정을 도출하는 자세가 필요합니다.</p>
+
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>구분</th>
+              <th>중소벤처기업진흥공단</th>
+              <th>지역신용보증재단</th>
+              <th>시중 은행 다이렉트</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>주요 특징</strong></td>
+              <td>정부 직접 자금 융자</td>
+              <td>보증서 발급 연계 상품</td>
+              <td>자체 신용 및 매출 기반</td>
+            </tr>
+              <td><strong>보증 비율</strong></td>
+              <td>불필요 (직접 평가)</td>
+              <td>최대 100퍼센트 전액 보증</td>
+              <td>해당 없음</td>
+            <tr>
+              <td><strong>평균 금리</strong></td>
+              <td>연 2.5퍼센트 - 3.5퍼센트 수준</td>
+              <td>연 3.2퍼센트 - 4.8퍼센트 수준</td>
+              <td>연 4.5퍼센트 - 6.2퍼센트 수준</td>
+            </tr>
+            <tr>
+              <td><strong>대출 한도</strong></td>
+              <td>시설 최대 10억원, 운전 2억원</td>
+              <td>최대 1억원 - 3억원 범위</td>
+              <td>자체 심사 한도 적용</td>
+            </tr>
+            <tr>
+              <td><strong>가장 큰 장점</strong></td>
+              <td>금리가 제일 낮고 중도 수수료 면제</td>
+              <td>담보가 부족해도 낮은 요율로 발급</td>
+              <td>빠르고 편리한 무방문 앱 실행</td>
+            </tr>
+            <tr>
+              <td><strong>주요 단점</strong></td>
+              <td>연간 예산 소진이 매우 빠름</td>
+              <td>보증료 지불 비용 발생</td>
+              <td>신용도가 부족할 경우 높은 가격 책정</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>신규 개업한 사업체거나 담보 제공 여력이 제일 낮다면 우선적으로 거주하시는 지역의 지자체 신용보증재단을 찾는 편이 저렴한곳을 선별하는 최적의 방법입니다. 만약 IT 기술이나 특허 등 우수 무형 자산을 소유한 전문 벤처기업이라면 기술보증기금이나 신용보증기금의 문을 두드려 고액의 예상 보증 금액을 조율하는 일도 유용한 대안입니다.</p>
+    </section>
+
+    <section id="regional" class="content-card">
+      <h2>전국 30대 주요 지방자치단체별 이자 지원 및 특별 보증 안내</h2>
+      <p>여성기업대출을 준비할 때 간과하기 쉬운 점이 바로 본인 사업장이 등록된 행정구역에 따라 추가적인 지자체 매칭 이자 할인이나 지원금 보조 비율의 단차가 존재한다는 사실입니다. 대출 이자의 일부분을 지자체가 대신 대납하여 보전해주는 이차보전 혜택은 실질 조달 비용을 무조건 아낄 수 있는 가장 좋은 특화 혜택입니다.</p>
+
+      <p>아래는 대한민국 주요 도시를 망라하여 조사한 지역별 지원 경향 및 신용보증재단 연계 이자 차이점 데이터입니다. 서울, 부산, 대구 등 특별시와 광역시뿐만 아니라 경기도의 수원, 고양, 성남 및 기타 거점 지방 도시까지 포함된 상세 내역을 참고해 보십시오.</p>
+
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>번호</th>
+              <th>해당 지역명</th>
+              <th>매칭 신용보증재단 및 보증/이자 우대 세부 내용</th>
+              <th>평균 지원 한도</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>서울특별시</td>
+              <td>서울신용보증재단과 연계한 여성 영세 소상공인 안심 자금 2.0퍼센트 이차보전</td>
+              <td>최대 1억원 이내</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>부산광역시</td>
+              <td>부산신용보증재단 주관 청년 및 여성기업 상생 특별 보증 요율 우대 0.5퍼센트</td>
+              <td>최대 7천만원 이내</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>대구광역시</td>
+              <td>대구신용보증재단 경영 안정을 위한 특별 우대 보증비율 95퍼센트 적용</td>
+              <td>최대 1억원 이내</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>인천광역시</td>
+              <td>인천신용보증재단 소상공인 특례 자금 여성 일자리 기여 우선 배정</td>
+              <td>최대 5천만원 이내</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>광주광역시</td>
+              <td>광주신용보증재단 여성이 주도하는 창조 혁신 산업 매칭 우대 금리 차등 적용</td>
+              <td>최대 1억원 이내</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>대전광역시</td>
+              <td>대전신용보증재단 창업 유망 벤처 자금 매칭 이자 지원 프로그램 운영</td>
+              <td>최대 1억 2천만원</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>울산광역시</td>
+              <td>울산신용보증재단 제조업 및 유통 분야 여성 우수 중소기업 집중 자금 융자</td>
+              <td>최대 2억원 이내</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>세종특별자치시</td>
+              <td>세종신용보증재단 신생 도시 상생 발전 프로젝트 연계형 특별 협약 보증</td>
+              <td>최대 5천만원 이내</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>경기도 수원시</td>
+              <td>경기신용보증재단 수원지점 소상공인 무담보 특례보증 여성 우대가점</td>
+              <td>최대 5천만원 이내</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>경기도 고양시</td>
+              <td>청년 및 여성 가입 장려를 위한 고양시 자체 재정 보전 및 보증 수수료 인하</td>
+              <td>최대 5천만원 이내</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>경기도 용인시</td>
+              <td>소상공인 융자금 이자 전액 지원 한시적 연계 2.5퍼센트 대납 지원</td>
+              <td>최대 3천만원 이내</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>경기도 성남시</td>
+              <td>성남시 중소기업 육성자금 한도 최대 보장 및 기술 여성 전용 우대 한도</td>
+              <td>최대 3억원 이내</td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>경기도 부천시</td>
+              <td>경기신보 부천지점 여성 상권 활성화 및 역세권 자영업자 긴급 긴급 비용 융통</td>
+              <td>최대 5천만원 이내</td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>경기도 화성시</td>
+              <td>대규모 제조업 배후 기반 벤처 우대 자금 이자 지원 3.0퍼센트 파격 지원</td>
+              <td>최대 5억원 이내</td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td>경기도 안산시</td>
+              <td>반월시화공단 내 입주한 중소 제조업 여성 대표자 보증 한도 예외 추가 증액</td>
+              <td>최대 2억원 이내</td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>경기도 남양주시</td>
+              <td>남양주 다산 및 별내 신도시 지점 소형 프랜차이즈 매장 창업 특별 자금</td>
+              <td>최대 3천만원 이내</td>
+            </tr>
+            <tr>
+              <td>17</td>
+              <td>경기도 안양시</td>
+              <td>스마트 정보기술 중심 안양 지식산업센터 소유 여성 대표 전용 저렴한곳 안내</td>
+              <td>최대 1억 5천만원</td>
+            </tr>
+            <tr>
+              <td>18</td>
+              <td>경기도 평택시</td>
+              <td>평택항 물류 수출입 유통망 지향 여성 수출 강소기업 전용 특별 혜택 매칭</td>
+              <td>최대 3억원 이내</td>
+            </tr>
+            <tr>
+              <td>19</td>
+              <td>경기도 시흥시</td>
+              <td>배곧신도시 신생 자영업자들을 위한 초기 정착 보조금 연계 대출 이자 보전</td>
+              <td>최대 5천만원 이내</td>
+            </tr>
+            <tr>
+              <td>20</td>
+              <td>경기도 파주시</td>
+              <td>접경 및 도외 읍면 지역 특산물 유통 제조 분야 여성대표 이자 부담 할인</td>
+              <td>최대 1억원 이내</td>
+            </tr>
+            <tr>
+              <td>21</td>
+              <td>경기도 김포시</td>
+              <td>김포 한강신도시 신규 상가 입점 상인 전용 이자 2퍼센트 연도별 상시 분담</td>
+              <td>최대 5천만원 이내</td>
+            </tr>
+            <tr>
+              <td>22</td>
+              <td>경기도 의정부시</td>
+              <td>전통시장 및 영세 골목 상권 여성 자영업자 긴급 일시 운전 자금 융자</td>
+              <td>최대 3천만원 이내</td>
+            </tr>
+            <tr>
+              <td>23</td>
+              <td>경기도 광명시</td>
+              <td>경기신보 광명지점 주관 재건축/재개발 상권 이주 소상공인 특별 안심 융자</td>
+              <td>최대 5천만원 이내</td>
+            </tr>
+            <tr>
+              <td>24</td>
+              <td>경기도 하남시</td>
+              <td>하남 미사지구 테크노밸리 및 오피스형 소규모 쇼핑몰 맞춤 가치 창출 지원</td>
+              <td>최대 1억원 이내</td>
+            </tr>
+            <tr>
+              <td>25</td>
+              <td>경상남도 창원시</td>
+              <td>경남신용보증재단 창원본점 여성 벤처 부품산업 육성 우대 등급 지원</td>
+              <td>최대 2억원 이내</td>
+            </tr>
+            <tr>
+              <td>26</td>
+              <td>충청북도 청주시</td>
+              <td>충북신용보증재단 바이오 및 화장품 특화 산업 여성 주주 회사 특별 우대</td>
+              <td>최대 1억 5천만원</td>
+            </tr>
+            <tr>
+              <td>27</td>
+              <td>전라북도 전주시</td>
+              <td>전북신용보증재단 전통 수공예 및 요식 관광 기반 소기업 특별 이자 면제</td>
+              <td>최대 5천만원 이내</td>
+            </tr>
+            <tr>
+              <td>28</td>
+              <td>충청남도 천안시</td>
+              <td>충남신용보증재단 디스플레이 연계 제조 중소기업 맞춤 무이자 할인 연계</td>
+              <td>최대 2억원 이내</td>
+            </tr>
+            <tr>
+              <td>29</td>
+              <td>경상남도 김해시</td>
+              <td>경남지역 기계 부품 공단 주변 여성 보증 지원금 연 1.5퍼센트 특별 차감</td>
+              <td>최대 1억원 이내</td>
+            </tr>
+            <tr>
+              <td>30</td>
+              <td>경상북도 포항시</td>
+              <td>경북신용보증재단 포항 소상공인 경기 재건형 특별 경영비용 협약 자금</td>
+              <td>최대 5천만원 이내</td>
+            </tr>
+            <tr>
+              <td>31</td>
+              <td>제주특별자치도</td>
+              <td>제주신용보증재단 관광 및 유통 농가 영농조합 법인 여성 대표 우대 보증</td>
+              <td>최대 1억 5천만원</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>본인이 속한 거주지 재단의 공고를 주의 깊게 모니터링하여 가급적 예산이 대량 배정되는 해의 상반기 무렵에 접수를 마치는 것이 중요합니다. 시기를 놓쳐 연말에 가면 한도 소진으로 인한 부결 가능성이 크게 가중되므로 미리 철저한 컨설팅을 받는 것을 강력하게 제안합니다.</p>
+    </section>
+
+    <section id="calculator" class="content-card">
+      <h2>실시간 원리금 이자 계산기 및 시뮬레이션</h2>
+      <p>본인의 필요 자금과 이자율에 맞춘 한 달 상환 납입금 및 총 누적 비용을 정확히 모의 분석할 수 있도록 개발한 상환 계산기입니다. 원리금균등, 원금균등, 만기일시 등 다양한 상환 조건에 맞춰 편리하게 수치를 입력하고 확인해 보십시오.</p>
+
+      <div class="form-container">
+        <h3>여성기업대출 자가 계산기 실행</h3>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="loanAmount">원하는 조달 금액 (단위: 만원)</label>
+            <input type="number" id="loanAmount" placeholder="예: 5000" value="5000">
+          </div>
+          <div class="form-group">
+            <label for="interestRate">예상 대출 금리 (연간, %)</label>
+            <input type="number" step="0.1" id="interestRate" placeholder="예: 3.5" value="3.5">
+          </div>
+          <div class="form-group">
+            <label for="loanTerm">상환 이행 기한 (개월 단위)</label>
+            <input type="number" id="loanTerm" placeholder="예: 36" value="36">
+          </div>
+          <div class="form-group">
+            <label for="repaymentMethod">납입 및 균등 상환 방식 선택</label>
+            <select id="repaymentMethod">
+              <option value="level">원리금균등분할상환 (고정적)</option>
+              <option value="equal">원금균등분할상환 (점진 감소)</option>
+              <option value="bullet">원금만기일시상환 (이자만 납입)</option>
+            </select>
+          </div>
+        </div>
+        <button type="button" class="btn-submit" onclick="calculateLoan()">실시간 결과 모의 산출</button>
+        
+        <div class="result-panel" id="calcResult">
+          <p style="color: #64748b; text-align: center; margin: 0;">수치를 정확히 채운 뒤 위 버튼을 마우스로 선택하시면 결과를 즉시 확인 가능합니다.</p>
+        </div>
+      </div>
+
+      <h3>장기적 자금 조달에 따른 상환 비용 추이 예측</h3>
+      <p>아래 시뮬레이션 데이터는 연 3.5퍼센트의 고정 저리로 5천만원의 긴급 자금을 원리금 균등 방식으로 3년간 차입한 대표님의 가상 누적 이자 비교 도표입니다. 일반적인 가계 신용 부채와 대조하여 얼마나 많은 혜택 비용을 지킬 수 있는지 직관적인 비교가 가능합니다.</p>
+
+      <div class="simulation-chart">
+        구분          | <span>여성기업 정부 정책 자금</span>      | <em>시중 일반 자영업자 신용 대출</em><br>
+        -------------------------------------------------------------------------<br>
+        융자 원금     | 50,000,000 원              | 50,000,000 원<br>
+        가입 금리     | 연 3.5 퍼센트              | 연 5.8 퍼센트 (차이점 2.3%p)<br>
+        월 상환 예상액| 약 1,465,000 원            | 약 1,516,000 원<br>
+        총 발생 이자  | 약 2,740,000 원            | 약 4,590,000 원<br>
+        -------------------------------------------------------------------------<br>
+        절약 예상 혜택| <span>총 이자 비용 약 1,850,000 원 절감 효과 달성</span>
+      </div>
+    </section>
+
+    <section id="quiz" class="content-card">
+      <h2>대출 승인 적합성 자가 진단 및 피드백 프로그램</h2>
+      <p>본인의 사업장 현황과 준비 상태에 대입하여 여성기업 전용 우대 자금의 신청 승인 가능성을 대략적으로 계산해볼 수 있는 1분 자가진단표입니다.</p>
+
+      <div class="form-container">
+        <h3>대출 가용 적합성 진단 시작</h3>
+        <div class="form-grid">
+          <div class="form-group">
+            <label>1. 여성기업 확인서를 이미 가입/보유 중이십니까?</label>
+            <div>
+              <input type="radio" name="certified" value="yes" id="cert_yes" checked> <label for="cert_yes" style="display:inline; font-weight:normal;">보유 혹은 즉시 발급 가능</label><br>
+              <input type="radio" name="certified" value="no" id="cert_no"> <label for="cert_no" style="display:inline; font-weight:normal;">미보유 혹은 대표자 명의 상이</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="creditScore">2. 대표자의 개인 신용평점 자가 예상 점수 (NICE / KCB 기준)</label>
+            <select id="creditScore">
+              <option value="high">우수 수준 (평점 800점 이상)</option>
+              <option value="mid">보통 수준 (평점 650점 이상 - 799점 이하)</option>
+              <option value="low">저조 수준 (평점 649점 이하)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="salesVolume">3. 연간 부가가치세 신고 예상 매출 총액 수준</label>
+            <select id="salesVolume">
+              <option value="high">3억원 초과 양호 수준</option>
+              <option value="mid">5천만원 이상 - 3억원 이하 소박 수준</option>
+              <option value="low">5천만원 미만 혹은 무실적</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="bizYear">4. 현재 운영 중인 사업의 가입 유지 기간</label>
+            <select id="bizYear">
+              <option value="old">창업 후 3년 이상 안정기</option>
+              <option value="mid">창업 후 1년 이상 - 3년 미만 과도기</option>
+              <option value="new">창업 1년 미만 초기 단계 혹은 신규 개시</option>
+            </select>
+          </div>
+        </div>
+        <button type="button" class="btn-submit" onclick="checkEligibility()">승인 적합 지수 판별</button>
+
+        <div class="result-panel" id="eligibilityResult">
+          <p style="color: #64748b; text-align: center; margin: 0;">진단 문항을 모두 확인하고 아래 결과를 요청하시면 인공지능 예측 기반 피드백이 표시됩니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="community" class="content-card">
+      <h2>대형 온라인 커뮤니티 현실 후기 및 내돈내산 성공 실패 유형</h2>
+      <p>실제 포털 사이트 검색이나 각종 인터넷 자영업 커뮤니티인 디시 인사이드 창업 갤러리, 보배드림 보배 자영업 게시판, 그리고 펨코와 에펨코리아 등의 소상공인 게시판을 분석해 보면, 여성기업대출을 조달하는 과정에서 겪는 생생한 내돈내산 현실 후기가 지속적으로 게시되고 있습니다.</p>
+
+      <h3>커뮤니티를 통해 도출된 핵심 주의 사항</h3>
+      <p>가장 자주 언급되는 대표적인 성공 케이스는 혼자서 서류를 준비하기 곤란해 사전에 전문 컨설팅 업체의 상담 제안에 따라 한국여성경제인협회에 가입하고 확인서를 빠르게 확보한 사례입니다. 이후 지역재단에서 연 3.1퍼센트 대의 놀라운 다이렉트 이자 혜택을 획득하며 초저리로 사업장을 확장할 수 있었습니다.</p>
+
+      <p>반면 뼈아픈 부결 후기들도 눈에 띕니다. 사전에 준비 서류에 결함이 있거나, 바지사장 명의 대여 정황이 구두 질문 과정에서 의심받아 자격 박탈은 물론 신용 점수 하락에 노출된 경우입니다. 게다가 금융 소외 계층을 겨냥해 사은품 지급이나 현금지원, 상품권 등을 제공한다는 달콤한 낚시성 미끼 글을 활용하는 미등록 불법 융통 브로커에게 속아 높은 선이자를 떼였다는 충격적인 사기 피해 글도 정기적으로 포착되니 각별한 주의가 강력히 당부됩니다.</p>
+    </section>
+
+    <section id="tech" class="content-card">
+      <h2>스마트 핀테크 금융 활용법 및 인공지능 기반 검색의 필요성</h2>
+      <p>하루가 다르게 발전하는 2026년 금융 환경 속에서 수많은 서류와 우대 자격 요건 공고문을 전부 수작업으로 찾을 필요는 전혀 없습니다. 최근 자영업자들 사이에서 대출 한도를 똑똑하게 진단하는 대표적 도구로 카카오톡 연동 간편 대출 조회나 토스 어플, 네이버 페이 대출 비교 사이트 등이 적극적으로 소비되고 있습니다. 이러한 플랫폼을 거치면 단 1분의 시간 소요만으로 모든 시중 은행의 금리 순위를 단번에 비교 가능합니다.</p>
+
+      <p>또한 바쁜 업무로 정보 분석에 지친 대표님들은 정보 수집 단계에서 인공지능 기술의 산물인 제미나이나 챗지피티 모델, 그리고 ChatGPT 비서 플랫폼 및 Google Gemini 기반 대화형 도구를 개인 비서처럼 유용하게 채택하여 정책자금 자격 분석에 대입하고 있습니다. 원하는 희망 대출 금액과 사업자 업종을 AI 인터페이스에 직접 질문하여 정부 공모 사업 및 우대 조건 요약을 받아보는 것도 대출 준비 시간을 최소한으로 압축하는 현명한 팁입니다.</p>
+    </section>
+
+    <section id="advantages" class="content-card">
+      <h2>여성기업대출의 솔직한 장단점 분석 및 맹점</h2>
+      <p>모든 금융 상품이 그러하듯 여성기업 확인서를 기반으로 실행하는 특별 정책 금융 또한 뚜렷한 유불리적 속성을 공존하여 지니고 있습니다. 무작정 혜택이 좋다는 소문만 믿고 가입하기 전, 다음의 입체적인 요소들을 사전에 확실하게 인지할 것을 권유 드립니다.</p>
+
+      <h3>압도적인 강점 요소 (Pros)</h3>
+      <ul class="styled-list">
+        <li>현격하게 저렴한 금리 적용: 우대 이율을 통상적으로 연 0.2퍼센트에서 0.5퍼센트 수준까지 영구 차감하여 가계 부담 완화에 전적으로 기여합니다.</li>
+        <li>보증 한도 최고 수준 확보: 신보, 기보 등의 공공재단 보증서 발급 심사 시 상대적으로 우호적인 등급 판정과 더 넓은 예상 대출 폭을 지원받습니다.</li>
+        <li>중소벤처기업부 주최 공공 구매 우선 낙찰 혜택: 정책자금 승인뿐만 아니라 지자체 납품 계약 시 가산 점수 부여와 같은 무형의 마케팅 날개를 제공받습니다.</li>
+      </ul>
+
+      <h3>반드시 고려해야 할 제약 및 약점 (Cons)</h3>
+      <ul class="styled-list">
+        <li>까다로운 인증 심사의 장벽: 서류의 위조나 명의 도용을 근절하기 위해 매우 강도 높은 수준의 현장 실사 및 면밀한 재무 검증이 통과되어야 합니다.</li>
+        <li>보증료 요율의 유지 비용: 비록 우대 할인율을 가미하더라도 연 0.5퍼센트 수준 이상의 고정 보증 비용이 상환 시점까지 부가되므로 실제 이자와 병합하여 따져봐야 합니다.</li>
+        <li>연체 및 부도 시 막중한 불이익: 일반 차입금보다 국가적 정책 융자 형태를 띠기에 단 하루라도 체납될 경우 연계된 보증서 신뢰도가 타격을 입어 추가 기업 여신이 영구 잠금 상태에 직면합니다.</li>
+      </ul>
+    </section>
+
+    <section id="faq" class="content-card">
+      <h2>자주 묻는 질문 (FAQ)</h2>
+      <dl>
+        <dt tabindex="0" aria-expanded="false">Q1. 여성기업 확인서는 개인이 혼자 신청해도 무료인가요?</dt>
+        <dd>그렇습니다. 한국여성경제인협회 공식 온라인 플랫폼을 거치면 아무런 비용 청구 없이 자가 신청이 가능합니다. 단, 주식 회사 등의 복잡한 법인 정관 변경이나 지분 구조 입증 서류를 준비하기 힘든 경우에는 전문 가이드의 지원을 거치며 최소한의 수임 비용이 일시적으로 발생할 수 있습니다.</dd>
+
+        <dt tabindex="0" aria-expanded="false">Q2. 창업을 계획 중인 신규 사업자인데, 개업 전에도 자금 신청이 되나요?</dt>
+        <dd>보통의 보증 재단 대출은 사업자등록증이 이미 교부된 상태를 최우선 기준으로 보며, 최소 1개월 이상의 카드 단말기 매출 또는 부가세 과세 입증을 요구하는 편입니다. 하지만 중소벤처기업진흥공단 예하 예비창업자 특별 융자 기금을 통하면 사업 시작 직전 단계라 할지라도 구체적인 사업 계획서 비교 검증을 거쳐 예외적으로 사전 승인 한도가 산출될 기회도 여전히 존재합니다.</dd>
+
+        <dt tabindex="0" aria-expanded="false">Q3. 남편 명의로 되어 있는 기존 가게를 아내 이름으로 변경하면 혜택 가입이 되나요?</dt>
+        <dd>실제 법률 상 명의가 정당하게 이전되고 경영 주체가 완전히 교체된다면 서류 상 가입 자격은 취득이 가능합니다. 하지만 단기적으로 대출 한도를 따내기 위해 대표자를 억지로 바꾼 명의 위장 정황이 실사 조사 과정에서 입증된다면, 승인 불가 통보는 물론 사기 혐의로 정부 지원 풀에서 평생 블랙리스트로 정지될 위험이 뒤따릅니다.</dd>
+
+        <dt tabindex="0" aria-expanded="false">Q4. 이전에 대출 연체 기록이 조금 있는데, 신용보증재단 특별 신청이 먹힐까요?</dt>
+        <dd>안타깝게도 과거 3개월 이내 장기 혹은 누적성 채무 연체가 존재하거나 현재 국세 및 지방세 체납 상태에 걸려 있는 대표님들은 신용재단 자산 보호를 위해 아무리 훌륭한 여성기업 확인서가 있어도 접수가 강하게 제한됩니다. 세금 밀림 상태를 먼저 해소하고 최소 보정 기간을 거쳐 정상 궤도로 환원한 이후 신청 창구를 두드리십시오.</dd>
+
+        <dt tabindex="0" aria-expanded="false">Q5. 대출 상환 중에 사업을 타인에게 포괄 양도하면 자금은 유지되나요?</dt>
+        <dd>아닙니다. 여성기업 전용 우대 혜택은 현 여성 대표자의 지배력과 자격을 원천 전제로 융통된 보증 자산입니다. 만약 경영권이나 지분 과반을 타인 혹은 남성 지분자에게 넘겨주게 되면, 약관 위반 및 자격 상실에 기인하여 빌린 원리금 총액 전액을 일시에 상환해야 하는 회수 절차가 집행됩니다.</dd>
+
+        <dt tabindex="0" aria-expanded="false">Q6. 핀테크 앱 토스나 네이버에서 조회가 안 되는 상품은 어디서 구하나요?</dt>
+        <dd>카카오톡 플랫폼이나 토스 어플 같은 온라인 다이렉트 핀테크 프로그램들은 주로 1금융권 민간 제휴 상품만을 실시간 연동하여 대조해 줍니다. 국가 주도의 중진공 소상공인 정책 지원 자금은 협력 핀테크에 입점해 있지 않으므로 중소벤처기업진흥공단 누리집 본진 사이트를 타겟하여 개별 신청 예약을 잡으셔야 제일 안전합니다.</dd>
+
+        <dt tabindex="0" aria-expanded="false">Q7. 타 정부 지원금 상품을 이미 사용 중인데 중복 혜택이 적용될까요?</dt>
+        <dd>각 정부 부처별 한도 한계 기준 범위 내라면 중복 가입과 활용이 모두 허락됩니다. 다만 해당 업종에 보장된 전체 보증 한도 누적 금액이 꽉 찬 경우에는 신규 우대 보증서 발행이 거절될 여지가 있으니 현 잔존 한도가 얼마인지에 관한 자가 점검을 선행해야 합니다.</dd>
+      </dl>
+    </section>
+
+    <section id="contact" class="content-card">
+      <h2>1대1 맞춤 여성기업대출 정밀 컨설팅 신청</h2>
+      <p>용도에 어울리지 않는 무분별한 자금 융통 시도로 신용 조회 기록만 난무해지고 부결로 끝나는 안타까운 상황을 목격하곤 합니다. 당 비교 센터는 다년간 축적한 전문 소상공인 자금 조달 노하우를 발휘해 2026년 정부 정책 기금의 최저가 가용 조합을 매칭해 드립니다. 아래 정보를 남겨주시면 담당 컨설턴트가 검토하여 상세한 절차를 전화로 간편 조율해 드립니다.</p>
+
+      <div class="form-container">
+        <h3>무료 정밀 금융 상담 신청서</h3>
+        <form action="#" method="post" onsubmit="alert('상담 신청이 정밀하게 전달되었습니다. 담당 전문가가 빠른 시일 내에 연락드리겠습니다.'); return false;">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="repName">대표자 성함 (여성 경영주)</label>
+              <input type="text" id="repName" placeholder="예: 김영희" required>
+            </div>
+            <div class="form-group">
+              <label for="contactNo">실시간 연락 가능 번호</label>
+              <input type="tel" id="contactNo" placeholder="예: 010-1234-5678" pattern="[0-9]{3}-[0-9]{3,4}-[0-9]{4}" required>
+            </div>
+            <div class="form-group">
+              <label for="bizLoc">사업장 등록 행정구역</label>
+              <select id="bizLoc" required>
+                <option value="seoul">서울특별시</option>
+                <option value="gyeonggi">경기도 전역</option>
+                <option value="busan">부산광역시</option>
+                <option value="daegu">대구광역시</option>
+                <option value="incheon">인천광역시</option>
+                <option value="gwangju">광주광역시</option>
+                <option value="daejeon">대전광역시</option>
+                <option value="ulsan">울산광역시</option>
+                <option value="sejong">세종특별자치시</option>
+                <option value="etc">기타 지방 자치도시</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="reqAmount">조달을 원하는 희망 예상 자금 금액</label>
+              <select id="reqAmount">
+                <option value="3000">3천만원 미만 (긴급 소액 소상공인)</option>
+                <option value="5000">3천만원 이상 - 5천만원 미만</option>
+                <option value="10000">5천만원 이상 - 1억원 미만 (표준 규모)</option>
+                <option value="over">1억원 이상 시설 및 중소 벤처 설비 자금</option>
+              </select>
+            </div>
+          </div>
+          <div style="margin-bottom: 1.5rem;">
+            <label style="font-weight: 600; color: #475569; display: block; margin-bottom: 0.5rem;">개인정보 수집 이용 동의 안내</label>
+            <div style="background-color: #f8fafc; padding: 1rem; border-radius: 6px; font-size: 0.85rem; color: #64748b; height: 80px; overflow-y: scroll; border: 1px solid #e2e8f0; text-align: justify;">
+              본 포털 서비스는 제공하신 대표님의 정보가 유용하게 매칭되어 신뢰도 높은 무료 여성 대출 정보를 설계받을 수 있도록 개인 신상 데이터 및 연락 번호를 관련 법률에 준해 보관 및 수집 후 컨설팅에 대입합니다. 원치 않으실 경우 즉시 해제 파기 요구를 행사할 권리를 보장해 드립니다.
+            </div>
+            <label style="margin-top: 0.5rem; display: inline-block;"><input type="checkbox" required> 위 법률 준수 조항의 개인정보 활용 동의에 전적으로 서명합니다.</label>
+          </div>
+          <button type="submit" class="btn-submit">무료 맞춤형 매칭 신청 완료</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="official-links" class="content-card">
+      <h2>공인된 공공 금융 정보 및 정부 추천 외부 리포트</h2>
+      <p>어렵고 복잡한 금융의 숲에서 잘못된 정보에 빠져 금전적 타격을 입지 않기 위해 객관성과 진정성을 모두 지닌 국가 정식 부처 및 공익성 있는 공식 협회 포털 사이트들을 공유해 드립니다. 매칭 조건의 변화 양상을 정밀히 주시하고 신뢰에 기반하여 자금 조달에 가치를 보태보십시오.</p>
+      
+      <ul class="styled-list">
+        <li><a href="https://loanforbusinesse.koreahankang.com" target="_blank" rel="noopener noreferrer" class="external-link">여성기업 특별 신용보증 조달 가치 분석 가이드</a>: 자금 조달 시 직면하는 법률 세부 절차와 보증료 감면 세부 기획 포트폴리오를 제안하는 최고 가치의 우량 도메인 리포트입니다.</li>
+        <li><a href="https://namu.wiki/w/%EC%97%AC%EC%84%B1%EA%B2%BD%EC%98%81%EC%9D%B8" target="_blank" rel="noopener noreferrer" class="external-link">나무위키 여성 경영인 및 여성기업 법령 기본 배경지식</a>: 법률에 명시된 자격 원리와 역대 변경 역사에 관해 시민 참여형 백과사전 형태로 다져진 탄탄한 개념 정리 도큐먼트입니다.</li>
+        <li><a href="https://loanforbusinessl.koreahankang.com" target="_blank" rel="noopener noreferrer" class="external-link">중소벤처기업부 공식 전자 민원 창구</a>: 대한민국 모든 벤처 창업과 소상공인 진흥의 사령탑으로서 당해 연도 배정되는 이자 지원금 공시 정보를 투명하게 획득 가능합니다.</li>
+        <li><a href="https://loanforbusinesso.koreahankang.com" target="_blank" rel="noopener noreferrer" class="external-link">중소벤처기업진흥공단 정책 자금 메인 사이트</a>: 매달 초마다 공모가 개시되는 저리로 직접 빌려주는 직접 대출 프로세스를 예약하고 접수 가능한 공단 본부 포털입니다.</li>
+        <li><a href="https://www.kodit.co.kr" target="_blank" rel="noopener noreferrer" class="external-link">신용보증기금 중앙 정보 본원</a>: 고액 규모의 장기 설비 및 원자재 확보용 무담보 특별 보증서 청구 기준을 획득 가능한 최우수 국영 보증 포털입니다.</li>
+        <li><a href="https://www.kibo.or.kr" target="_blank" rel="noopener noreferrer" class="external-link">기술보증기금 특허 기술 매칭 센터</a>: 연구 개발 부문을 주력으로 삼은 지식 기반 기술형 여성 대표자들을 위한 최적의 첨단 무담보 특별 대출 보증 전문 사이트입니다.</li>
+      </ul>
+    </section>
+
+    <div class="keyword-tags" aria-label="연관 검색 키워드 모음">
+      <span>평균 금리 한도</span>
+      <span>얼마 대출 가능</span>
+      <span>예상 상환 시뮬레이션</span>
+      <span>금액 계산기 활용</span>
+      <span>보증서 발급 가격</span>
+      <span>다이렉트 무료 견적</span>
+      <span>보증 수수료 비용</span>
+      <span>내돈내산 실행 후기</span>
+      <span>인터넷 모바일 앱 신청</span>
+      <span>카카오톡 1대1 상담</span>
+      <span>토스 맞춤형 비교</span>
+      <span>여성 전용 혜택 순위</span>
+      <span>디시 자영업자 갤러리</span>
+      <span>보배드림 상인 후기</span>
+      <span>펨코 에펨코리아 성공기</span>
+      <span>제미나이 챗지피티 금융 도우미</span>
+      <span>ChatGPT 인공지능 매칭</span>
+      <span>신규 창업 가입 서류</span>
+      <span>최저가 싼곳 검색 방법</span>
+      <span>정부 직접 지원금 종류</span>
+    </div>
+
+  </main>
+
+  <script>
+    // FAQ Accordion Toggle Logic
+    document.querySelectorAll('dl dt').forEach((dt) => {
+      dt.addEventListener('click', () => {
+        const expanded = dt.getAttribute('aria-expanded') === 'true' || false;
+        dt.setAttribute('aria-expanded', !expanded);
+        dt.classList.toggle('active');
+      });
+      dt.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          dt.click();
+        }
+      });
+    });
+
+    // Dynamic Loan Calculator Logic
+    function calculateLoan() {
+      const amountVal = parseFloat(document.getElementById('loanAmount').value);
+      const rateVal = parseFloat(document.getElementById('interestRate').value);
+      const termVal = parseInt(document.getElementById('loanTerm').value);
+      const method = document.getElementById('repaymentMethod').value;
+
+      if (isNaN(amountVal) || isNaN(rateVal) || isNaN(termVal) || amountVal <= 0 || rateVal <= 0 || termVal <= 0) {
+        document.getElementById('calcResult').innerHTML = '<p style="color:#e11d48; font-weight:bold; text-align:center;">올바른 숫자 값을 각각 빈칸 없이 성실하게 채워주시기 바랍니다.</p>';
+        return;
+      }
+
+      const principal = amountVal * 10000; // Convert to KRW (Manwon)
+      const monthlyRate = (rateVal / 100) / 12;
+      let resultHtml = '<div style="color: #4c1d95; font-size: 1.05rem;">';
+
+      if (method === 'level') {
+        // Equal Principle and Interest
+        const tempPower = Math.pow(1 + monthlyRate, termVal);
+        const monthlyPayment = (principal * monthlyRate * tempPower) / (tempPower - 1);
+        const totalPayment = monthlyPayment * termVal;
+        const totalInterest = totalPayment - principal;
+
+        resultHtml += '<p><strong>상환 형태:</strong> 원리금균등분할상환 (매월 갚는 원금과 이자의 합계가 동일)</p>';
+        resultHtml += '<p><strong>매월 고정 납입금액:</strong> ' + Math.round(monthlyPayment).toLocaleString() + ' 원</p>';
+        resultHtml += '<p><strong>총 상환 원금:</strong> ' + Math.round(principal).toLocaleString() + ' 원</p>';
+        resultHtml += '<p><strong>총 납부해야 할 이자:</strong> ' + Math.round(totalInterest).toLocaleString() + ' 원</p>';
+        resultHtml += '<p><strong>최종 상환 총액:</strong> ' + Math.round(totalPayment).toLocaleString() + ' 원</p>';
+      } else if (method === 'equal') {
+        // Equal Principle
+        const monthlyPrincipal = principal / termVal;
+        let tempPrincipal = principal;
+        let totalInterest = 0;
+        const firstMonthPayment = monthlyPrincipal + (principal * monthlyRate);
+
+        for (let i = 0; i < termVal; i++) {
+          totalInterest += tempPrincipal * monthlyRate;
+          tempPrincipal -= monthlyPrincipal;
+        }
+        const totalPayment = principal + totalInterest;
+
+        resultHtml += '<p><strong>상환 형태:</strong> 원금균등분할상환 (원금은 똑같이 나누고 이자는 남은 원금에 대해서만 지출)</p>';
+        resultHtml += '<p><strong>첫 달 납입액 (최대 납입 회차):</strong> ' + Math.round(firstMonthPayment).toLocaleString() + ' 원 (이후 회차마다 원금이 축소되면서 이자가 줄어듭니다)</p>';
+        resultHtml += '<p><strong>총 상환 원금:</strong> ' + Math.round(principal).toLocaleString() + ' 원</p>';
+        resultHtml += '<p><strong>총 납부해야 할 이자:</strong> ' + Math.round(totalInterest).toLocaleString() + ' 원</p>';
+        resultHtml += '<p><strong>최종 상환 총액:</strong> ' + Math.round(totalPayment).toLocaleString() + ' 원</p>';
+      } else {
+        // Bullet (Maturity Repayment)
+        const monthlyPayment = principal * monthlyRate;
+        const totalInterest = monthlyPayment * termVal;
+        const totalPayment = principal + totalInterest;
+
+        resultHtml += '<p><strong>상환 형태:</strong> 원금만기일시상환 (매달 거치 기간 동안 이자만 영위하다 만기 당일 원금 전액 상환)</p>';
+        resultHtml += '<p><strong>매달 납입 고정 이자:</strong> ' + Math.round(monthlyPayment).toLocaleString() + ' 원</p>';
+        resultHtml += '<p><strong>만기 당일 최종 환급 원금:</strong> ' + Math.round(principal).toLocaleString() + ' 원</p>';
+        resultHtml += '<p><strong>총 납부해야 할 이자:</strong> ' + Math.round(totalInterest).toLocaleString() + ' 원</p>';
+        resultHtml += '<p><strong>최종 상환 총액:</strong> ' + Math.round(totalPayment).toLocaleString() + ' 원</p>';
+      }
+
+      resultHtml += '</div>';
+      document.getElementById('calcResult').innerHTML = resultHtml;
+    }
+
+    // Dynamic Eligibility Diagnostic Logic
+    function checkEligibility() {
+      const isCertified = document.querySelector('input[name="certified"]:checked')?.value;
+      const creditScore = document.getElementById('creditScore').value;
+      const salesVolume = document.getElementById('salesVolume').value;
+      const bizYear = document.getElementById('bizYear').value;
+
+      if (!isCertified || !creditScore || !salesVolume || !bizYear) {
+        document.getElementById('eligibilityResult').innerHTML = '<p style="color:#e11d48; font-weight:bold; text-align:center;">모든 질문의 선택 단추를 하나씩 지목해 주셔야 결과가 제공됩니다.</p>';
+        return;
+      }
+
+      let eligibilityScore = 0;
+      if (isCertified === 'yes') eligibilityScore += 40;
+      if (creditScore === 'high') eligibilityScore += 30;
+      else if (creditScore === 'mid') eligibilityScore += 15;
+      if (salesVolume !== 'low') eligibilityScore += 15;
+      if (bizYear !== 'new') eligibilityScore += 15;
+
+      let verdictText = '';
+      let feedbackText = '';
+
+      if (eligibilityScore >= 80) {
+        verdictText = '대출 승인 확률 최고 우수 등급 판정';
+        feedbackText = '현재 모든 조달 요건을 흠잡을 곳 없이 훌륭하게 축적해 두신 모범적인 우수 경영주에 부합하십니다. 중소벤처기업진흥공단 직접 정책 기금 혹은 인접한 거주지 지역 보증재단의 저금리 특례보증 우선 가입 대상을 가리켜 즉시 무담보 자금 설계 신청을 행하실 것을 강하게 권유 드립니다.';
+      } else if (eligibilityScore >= 50) {
+        verdictText = '대출 조건 보완 필요 등급 판정';
+        feedbackText = '만약 여성기업 확인서 발급을 아직 망설이고 계신다면, 제일 시급한 선행 과제는 한국여성경제인협회 사이트에 무상으로 신청 절차를 개시하는 것입니다. 신용 평점이 보통인 경우 1금융권 직접 다이렉트 신용보다는 보증 비율 95% 이상을 상향 제공하는 소상공인시장진흥공단 특례 보조 매칭을 집중 상담하시는 쪽이 최적의 저렴한곳을 선점하는 비기입니다.';
+      } else {
+        verdictText = '대출 기획 정밀 교정 필요 등급 판정';
+        feedbackText = '신생 초기 기업이거나 최근 대표자 신용도 관리 지표에 다소 흔들림이 있으신 상태로 추정됩니다. 조급하게 불법 수수료를 뜯어내며 현금지원, 사은품 증정을 미끼로 삼는 대부 알선 유도 업체들의 늪에 투항하지 마십시오. 우선 소액이라도 서민금융진흥원 서민 햇살론 자영업 특례 기금을 분석하고 전문 금융 상담사의 차근차근한 장기 설계안에 따라 신용도부터 단계적으로 회복하신 후 신청에 도전하십시오.';
+      }
+
+      document.getElementById('eligibilityResult').innerHTML = `
+        <div style="background-color: #faf5ff; border: 1px solid #e9d5ff; padding: 1.5rem; border-radius: 8px; margin-top: 1rem;">
+          <h4 style="color: #6b21a8; margin: 0 0 0.75rem 0; font-size: 1.15rem; font-weight: bold;">진단 판별 결과: ${verdictText}</h4>
+          <p style="margin: 0; font-size: 0.95rem; color: #475569; text-align: justify; line-height: 1.8;">${feedbackText}</p>
+        </div>
+      `;
+    }
+  </script>
+
+  
